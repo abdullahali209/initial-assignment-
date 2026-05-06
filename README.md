@@ -9,7 +9,16 @@ Instructor: Krar Haider
 ## Files Included
 - dataset.csv → Google stock sample dataset  
 - analysis.py → Python code for analysis  
-- README.md → Project description  
+- README.md → Project description import pandas as pd
+import matplotlib.pyplot as plt
+
+data = pd.read_csv('dataset.csv')
+print(data.head())
+print(data.describe())
+
+plt.plot(data['Close'])
+plt.title("Google Stock Closing Prices")     
+plt.show()  
 
 ## Description
 This project performs basic analysis on Google stock data including:
